@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15CB94852C86646100F7EA8F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CB94842C86646100F7EA8F /* SoundPlayer.swift */; };
+		15D3C5022C864C2000CFC0DE /* Finger_DrumsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3C5012C864C2000CFC0DE /* Finger_DrumsApp.swift */; };
+		15D3C5042C864C2000CFC0DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3C5032C864C2000CFC0DE /* ContentView.swift */; };
+		15D3C5062C864C2000CFC0DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C5052C864C2000CFC0DE /* Assets.xcassets */; };
+		15D3C5092C864C2000CFC0DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C5082C864C2000CFC0DE /* Preview Assets.xcassets */; };
+		15D3C5142C864C2100CFC0DE /* Finger_DrumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3C5132C864C2100CFC0DE /* Finger_DrumsTests.swift */; };
+		15D3C51E2C864C2100CFC0DE /* Finger_DrumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3C51D2C864C2100CFC0DE /* Finger_DrumsUITests.swift */; };
+		15D3C5202C864C2100CFC0DE /* Finger_DrumsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D3C51F2C864C2100CFC0DE /* Finger_DrumsUITestsLaunchTests.swift */; };
+		15D3C5332C8652B200CFC0DE /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C52E2C8652B200CFC0DE /* crash.wav */; };
+		15D3C5342C8652B200CFC0DE /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C52F2C8652B200CFC0DE /* kick.wav */; };
+		15D3C5352C8652B200CFC0DE /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C5302C8652B200CFC0DE /* snare.wav */; };
+		15D3C5362C8652B200CFC0DE /* closed-hi-hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C5312C8652B200CFC0DE /* closed-hi-hat.wav */; };
+		15D3C5372C8652B200CFC0DE /* open-hi-hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15D3C5322C8652B200CFC0DE /* open-hi-hat.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15D3C5102C864C2100CFC0DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15D3C4F62C864C2000CFC0DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D3C4FD2C864C2000CFC0DE;
+			remoteInfo = "Finger Drums";
+		};
+		15D3C51A2C864C2100CFC0DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15D3C4F62C864C2000CFC0DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D3C4FD2C864C2000CFC0DE;
+			remoteInfo = "Finger Drums";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15CB94842C86646100F7EA8F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		15D3C4FE2C864C2000CFC0DE /* Finger Drums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finger Drums.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D3C5012C864C2000CFC0DE /* Finger_DrumsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger_DrumsApp.swift; sourceTree = "<group>"; };
+		15D3C5032C864C2000CFC0DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15D3C5052C864C2000CFC0DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15D3C5082C864C2000CFC0DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15D3C50A2C864C2000CFC0DE /* Finger_Drums.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finger_Drums.entitlements; sourceTree = "<group>"; };
+		15D3C50F2C864C2100CFC0DE /* Finger DrumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger DrumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D3C5132C864C2100CFC0DE /* Finger_DrumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger_DrumsTests.swift; sourceTree = "<group>"; };
+		15D3C5192C864C2100CFC0DE /* Finger DrumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finger DrumsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D3C51D2C864C2100CFC0DE /* Finger_DrumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger_DrumsUITests.swift; sourceTree = "<group>"; };
+		15D3C51F2C864C2100CFC0DE /* Finger_DrumsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger_DrumsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15D3C52E2C8652B200CFC0DE /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		15D3C52F2C8652B200CFC0DE /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		15D3C5302C8652B200CFC0DE /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
+		15D3C5312C8652B200CFC0DE /* closed-hi-hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "closed-hi-hat.wav"; sourceTree = "<group>"; };
+		15D3C5322C8652B200CFC0DE /* open-hi-hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "open-hi-hat.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15D3C4FB2C864C2000CFC0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C50C2C864C2100CFC0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C5162C864C2100CFC0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15D3C4F52C864C2000CFC0DE = {
+			isa = PBXGroup;
+			children = (
+				15D3C5002C864C2000CFC0DE /* Finger Drums */,
+				15D3C5122C864C2100CFC0DE /* Finger DrumsTests */,
+				15D3C51C2C864C2100CFC0DE /* Finger DrumsUITests */,
+				15D3C4FF2C864C2000CFC0DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15D3C4FF2C864C2000CFC0DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C4FE2C864C2000CFC0DE /* Finger Drums.app */,
+				15D3C50F2C864C2100CFC0DE /* Finger DrumsTests.xctest */,
+				15D3C5192C864C2100CFC0DE /* Finger DrumsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15D3C5002C864C2000CFC0DE /* Finger Drums */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C52D2C86521000CFC0DE /* Drum Samples */,
+				15D3C5012C864C2000CFC0DE /* Finger_DrumsApp.swift */,
+				15CB94842C86646100F7EA8F /* SoundPlayer.swift */,
+				15D3C5032C864C2000CFC0DE /* ContentView.swift */,
+				15D3C5052C864C2000CFC0DE /* Assets.xcassets */,
+				15D3C50A2C864C2000CFC0DE /* Finger_Drums.entitlements */,
+				15D3C5072C864C2000CFC0DE /* Preview Content */,
+			);
+			path = "Finger Drums";
+			sourceTree = "<group>";
+		};
+		15D3C5072C864C2000CFC0DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C5082C864C2000CFC0DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15D3C5122C864C2100CFC0DE /* Finger DrumsTests */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C5132C864C2100CFC0DE /* Finger_DrumsTests.swift */,
+			);
+			path = "Finger DrumsTests";
+			sourceTree = "<group>";
+		};
+		15D3C51C2C864C2100CFC0DE /* Finger DrumsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C51D2C864C2100CFC0DE /* Finger_DrumsUITests.swift */,
+				15D3C51F2C864C2100CFC0DE /* Finger_DrumsUITestsLaunchTests.swift */,
+			);
+			path = "Finger DrumsUITests";
+			sourceTree = "<group>";
+		};
+		15D3C52D2C86521000CFC0DE /* Drum Samples */ = {
+			isa = PBXGroup;
+			children = (
+				15D3C5312C8652B200CFC0DE /* closed-hi-hat.wav */,
+				15D3C52E2C8652B200CFC0DE /* crash.wav */,
+				15D3C52F2C8652B200CFC0DE /* kick.wav */,
+				15D3C5322C8652B200CFC0DE /* open-hi-hat.wav */,
+				15D3C5302C8652B200CFC0DE /* snare.wav */,
+			);
+			path = "Drum Samples";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15D3C4FD2C864C2000CFC0DE /* Finger Drums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D3C5232C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger Drums" */;
+			buildPhases = (
+				15D3C4FA2C864C2000CFC0DE /* Sources */,
+				15D3C4FB2C864C2000CFC0DE /* Frameworks */,
+				15D3C4FC2C864C2000CFC0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Finger Drums";
+			productName = "Finger Drums";
+			productReference = 15D3C4FE2C864C2000CFC0DE /* Finger Drums.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15D3C50E2C864C2100CFC0DE /* Finger DrumsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D3C5262C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger DrumsTests" */;
+			buildPhases = (
+				15D3C50B2C864C2100CFC0DE /* Sources */,
+				15D3C50C2C864C2100CFC0DE /* Frameworks */,
+				15D3C50D2C864C2100CFC0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15D3C5112C864C2100CFC0DE /* PBXTargetDependency */,
+			);
+			name = "Finger DrumsTests";
+			productName = "Finger DrumsTests";
+			productReference = 15D3C50F2C864C2100CFC0DE /* Finger DrumsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15D3C5182C864C2100CFC0DE /* Finger DrumsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D3C5292C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger DrumsUITests" */;
+			buildPhases = (
+				15D3C5152C864C2100CFC0DE /* Sources */,
+				15D3C5162C864C2100CFC0DE /* Frameworks */,
+				15D3C5172C864C2100CFC0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15D3C51B2C864C2100CFC0DE /* PBXTargetDependency */,
+			);
+			name = "Finger DrumsUITests";
+			productName = "Finger DrumsUITests";
+			productReference = 15D3C5192C864C2100CFC0DE /* Finger DrumsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15D3C4F62C864C2000CFC0DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					15D3C4FD2C864C2000CFC0DE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					15D3C50E2C864C2100CFC0DE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 15D3C4FD2C864C2000CFC0DE;
+					};
+					15D3C5182C864C2100CFC0DE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 15D3C4FD2C864C2000CFC0DE;
+					};
+				};
+			};
+			buildConfigurationList = 15D3C4F92C864C2000CFC0DE /* Build configuration list for PBXProject "Finger Drums" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15D3C4F52C864C2000CFC0DE;
+			productRefGroup = 15D3C4FF2C864C2000CFC0DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15D3C4FD2C864C2000CFC0DE /* Finger Drums */,
+				15D3C50E2C864C2100CFC0DE /* Finger DrumsTests */,
+				15D3C5182C864C2100CFC0DE /* Finger DrumsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15D3C4FC2C864C2000CFC0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D3C5332C8652B200CFC0DE /* crash.wav in Resources */,
+				15D3C5372C8652B200CFC0DE /* open-hi-hat.wav in Resources */,
+				15D3C5092C864C2000CFC0DE /* Preview Assets.xcassets in Resources */,
+				15D3C5342C8652B200CFC0DE /* kick.wav in Resources */,
+				15D3C5352C8652B200CFC0DE /* snare.wav in Resources */,
+				15D3C5062C864C2000CFC0DE /* Assets.xcassets in Resources */,
+				15D3C5362C8652B200CFC0DE /* closed-hi-hat.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C50D2C864C2100CFC0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C5172C864C2100CFC0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15D3C4FA2C864C2000CFC0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D3C5042C864C2000CFC0DE /* ContentView.swift in Sources */,
+				15CB94852C86646100F7EA8F /* SoundPlayer.swift in Sources */,
+				15D3C5022C864C2000CFC0DE /* Finger_DrumsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C50B2C864C2100CFC0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D3C5142C864C2100CFC0DE /* Finger_DrumsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15D3C5152C864C2100CFC0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D3C51E2C864C2100CFC0DE /* Finger_DrumsUITests.swift in Sources */,
+				15D3C5202C864C2100CFC0DE /* Finger_DrumsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15D3C5112C864C2100CFC0DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15D3C4FD2C864C2000CFC0DE /* Finger Drums */;
+			targetProxy = 15D3C5102C864C2100CFC0DE /* PBXContainerItemProxy */;
+		};
+		15D3C51B2C864C2100CFC0DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15D3C4FD2C864C2000CFC0DE /* Finger Drums */;
+			targetProxy = 15D3C51A2C864C2100CFC0DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15D3C5212C864C2100CFC0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15D3C5222C864C2100CFC0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		15D3C5242C864C2100CFC0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Finger Drums/Finger_Drums.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Finger Drums/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-Drums";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		15D3C5252C864C2100CFC0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Finger Drums/Finger_Drums.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Finger Drums/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-Drums";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		15D3C5272C864C2100CFC0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-DrumsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger Drums.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Finger Drums";
+			};
+			name = Debug;
+		};
+		15D3C5282C864C2100CFC0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-DrumsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finger Drums.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Finger Drums";
+			};
+			name = Release;
+		};
+		15D3C52A2C864C2100CFC0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-DrumsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Finger Drums";
+			};
+			name = Debug;
+		};
+		15D3C52B2C864C2100CFC0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.Finger-DrumsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Finger Drums";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15D3C4F92C864C2000CFC0DE /* Build configuration list for PBXProject "Finger Drums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D3C5212C864C2100CFC0DE /* Debug */,
+				15D3C5222C864C2100CFC0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D3C5232C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger Drums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D3C5242C864C2100CFC0DE /* Debug */,
+				15D3C5252C864C2100CFC0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D3C5262C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger DrumsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D3C5272C864C2100CFC0DE /* Debug */,
+				15D3C5282C864C2100CFC0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D3C5292C864C2100CFC0DE /* Build configuration list for PBXNativeTarget "Finger DrumsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15D3C52A2C864C2100CFC0DE /* Debug */,
+				15D3C52B2C864C2100CFC0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15D3C4F62C864C2000CFC0DE /* Project object */;
+}
