@@ -3,9 +3,16 @@
 LangChain RAG sample usage with Ollama.
 
 Notes:
-RAG: two parts
-1. Indexing: load data, split, embed, store.
-2. Retrieve, generate.
+- RAG: two parts
+    1. Indexing: load data, split, embed, store.
+    2. Retrieve, generate.
+- Embedding: numerical vector representation of text, e.g., used in semantic search.
+- Word embedding techniques:
+    - CBOW,skip-gram: word2vec,GloVe,fastText
+    - Transformer: BERT, GPT
+    - LSTM: ELMo
+- Optimizations in Vector Storage
+    - Locality sensitive hashing to speed up cosine similarity search.
 
 References:
 LangChain RAG:
@@ -24,6 +31,9 @@ ollama._types.ResponseError: 404 page not found
 vectorstore = Chroma.from_documents(documents=splits, embedding=OllamaEmbeddings(model=MODEL))
 ... which is fixed by using this import instead ...
 from langchain_community.embeddings.ollama import OllamaEmbeddings
+
+RAG Prompt from LangChain Prompt Hub:
+https://smith.langchain.com/hub/rlm/rag-prompt
 """
 
 import bs4
@@ -39,7 +49,6 @@ from langchain_ollama.llms import OllamaLLM
 
 MODEL = "qwen2:72b-instruct"
 MODEL = "mistral:7b-instruct"
-
 llm = OllamaLLM(model=MODEL)
 
 # Load, chunk and index the contents of the blog.
@@ -51,10 +60,11 @@ loader = WebBaseLoader(
         )
     ),
 )
-docs = loader.load()
+docs = loader.load() # Load blog.
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-splits = text_splitter.split_documents(docs)
+splits = text_splitter.split_documents(docs) # Split blog into chunks.
+  # Store numerical vector embedding of chunks from split into Chroma vectorstore. 
 vectorstore = Chroma.from_documents(documents=splits, embedding=OllamaEmbeddings(model=MODEL))
 
 
