@@ -1,7 +1,7 @@
 """
 2024-09-04
 Comparison of the basic usage of querying an Ollama model
-using LangChain and Ollama Python.
+using LangChain versus Ollama Python.
 
 >>> References
 Chaining with pipes:
