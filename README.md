@@ -4,6 +4,9 @@
 - python, langchain, ollama, LLM RAG
 - Swift, SwiftUI, macOS app
 
+## Notes
+- computer vision notes
+
 ## 2024-09-02
 - macOS app that plays drum sounds with keyboard presses made with Swift and SwiftUI.
 
