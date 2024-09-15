@@ -7,6 +7,7 @@
 ## Notes
 - computer vision notes
 - engineering large software systems notes
+- git usage notes
 
 ## 2024-09-02
 - macOS app that plays drum sounds with keyboard presses made with Swift and SwiftUI.
