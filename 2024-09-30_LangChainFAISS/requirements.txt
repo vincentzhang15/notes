@@ -1,0 +1,2 @@
+langchain-community 
+faiss-gpu-cu12
